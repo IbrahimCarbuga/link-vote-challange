@@ -1,0 +1,144 @@
+.home {
+    display: flex;
+  
+    .homeContainer {
+      align-items: center;
+      flex-direction: column;
+      display: flex;
+      flex: 4;
+  
+      .topSubmit {
+        height: 10rem;
+        border-bottom: 0.5px solid rgb(231, 228, 228);
+  
+        .submitLink {
+          text-decoration: none;
+  
+          .submitButton {
+            display: flex;
+            margin-top: 20px;
+            height: 8rem;
+            width: 32rem;
+            align-items: center;
+            flex-direction: row;
+            justify-content: flex-start;
+            background-color: lightgray;
+            font-size: 40px;
+            color: black;
+  
+            .icon {
+              font-size: 115px;
+              color: black;
+            }
+          }
+        }
+      }
+  
+      .orderType{
+          display: flex;
+          margin-top: 10px;
+          width: 32rem;
+  
+          .selectOption{
+              width: 250px;
+          }
+  
+      }
+  
+      .listItems {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 32rem;
+        margin-top: 20px;
+        flex: 4;
+        position: relative;
+  
+        .left {
+          display: flex;
+          flex: 1;
+  
+          .emptyButton {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: flex-start;
+            background-color: lightgray;
+            font-size: 25px;
+            color: black;
+  
+            span:nth-child(1) {
+              font-weight: bold;
+              font-size: 25px;
+            }
+            span:nth-child(2) {
+              font-size: 20px;
+            }
+          }
+        }
+        .right {
+          display: flex;
+          flex-direction: column;
+          margin-left: 20px;
+          flex: 3;
+  
+          .rightTop {
+            display: flex;
+            flex-direction: column;
+  
+            span:nth-child(1) {
+              font-weight: bold;
+              font-size: 20px;
+            }
+            span:nth-child(2) {
+              color: rgb(133, 129, 129);
+              font-size: 15px;
+            }
+          }
+  
+          .rightBottom {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+  
+            span {
+              color: rgb(133, 129, 129);
+              font-weight: bold;
+              cursor: pointer;
+            }
+  
+            span:nth-child(1):hover {
+              color: green;
+              background-color: rgba(0, 128, 0, 0.336);
+              border-radius: 10px;
+            }
+            span:nth-child(2):hover {
+              color: red;
+              background-color: rgba(255, 0, 0, 0.267);
+              border-radius: 10px;
+            }
+          }
+        }
+        .removeButton {
+          opacity: 0;
+        }
+      }
+      .listItems:hover {
+        cursor: pointer;
+        background-color: lightgray;
+        border-radius: 10px;
+        .removeButton {
+          color: red;  
+          background-color: white;
+          border-radius: 50%;
+          position: absolute;
+          top: -10px;
+          right: -10px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  
